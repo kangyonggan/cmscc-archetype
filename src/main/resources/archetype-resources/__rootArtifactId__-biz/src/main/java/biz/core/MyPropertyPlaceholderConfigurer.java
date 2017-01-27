@@ -52,6 +52,15 @@ public class MyPropertyPlaceholderConfigurer extends PropertyPlaceholderConfigur
         JSONArray jsonArray = jsonObject.getJSONArray("configs");
         log.info("共有{}项配置!", jsonArray.size());
 
+        load(jsonArray);
+    }
+
+    /**
+     * 加载配置
+     *
+     * @param jsonArray
+     */
+    public static void load(JSONArray jsonArray) {
         for (int i = 0; i < jsonArray.size(); i++) {
             JSONObject object = jsonArray.getJSONObject(i);
             log.info("正在存储配置:{}", object);
