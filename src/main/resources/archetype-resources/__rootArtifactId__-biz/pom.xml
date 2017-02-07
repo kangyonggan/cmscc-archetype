@@ -172,25 +172,25 @@
         <profile>
             <id>dev</id>
             <properties>
-                <env>local</env>
+                <env>dev</env>
             </properties>
         </profile>
         <profile>
             <id>uat</id>
             <properties>
-                <env>local</env>
+                <env>uat</env>
             </properties>
         </profile>
         <profile>
             <id>hd</id>
             <properties>
-                <env>local</env>
+                <env>hd</env>
             </properties>
         </profile>
         <profile>
             <id>prod</id>
             <properties>
-                <env>local</env>
+                <env>prod</env>
             </properties>
         </profile>
     </profiles>
