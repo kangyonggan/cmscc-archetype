@@ -128,7 +128,7 @@
                     <dependencies>
                         <dependency>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>cmscc-dao</artifactId>
+                            <artifactId>${rootArtifactId}-dao</artifactId>
                             <version>${project.version}</version>
                         </dependency>
                     </dependencies>
