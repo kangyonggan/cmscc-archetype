@@ -40,8 +40,8 @@ VALUES
   ('${rootArtifactId}', 'local', 'redis.maxIdle', '100', 'redis最大等待数'),
   ('${rootArtifactId}', 'local', 'redis.maxTotal', '1000', 'redis最大连接数'),
   ('${rootArtifactId}', 'local', 'redis.minIdle', '50', 'redis最小等待数'),
-  ('${rootArtifactId}', 'local', 'redis.password', '******', '邮件服务器用户名'),
-  ('${rootArtifactId}', 'local', 'redis.port', '6379', 'redis密码'),
+  ('${rootArtifactId}', 'local', 'redis.password', '******', 'redis密码'),
+  ('${rootArtifactId}', 'local', 'redis.port', '6379', 'redis端口'),
   ('${rootArtifactId}', 'local', 'redis.prefix', '${rootArtifactId}', 'redis的key的前缀'),
   ('${rootArtifactId}', 'local', 'redis.testOnBorrow', 'true', 'redis测试支持'),
 
