@@ -68,8 +68,12 @@ public class MyPropertyPlaceholderConfigurer extends PropertyPlaceholderConfigur
             String name = object.getString("name");
             String value = object.getString("value");
 
-            System.setProperty(name, value);
-            PropertiesUtil.putProperties(name, value);
+            if (!PropertiesUtil.containsKey(name)) {
+                System.setProperty(name, value);
+                PropertiesUtil.putProperties(name, value);
+            } else {
+                log.info("本地配置中存在key为{}的配置{}，不会使用远端的配置{}!", name, PropertiesUtil.getProperties(name), value);
+            }
         }
 
         log.info("从配置中心加载配置完毕！！！");
