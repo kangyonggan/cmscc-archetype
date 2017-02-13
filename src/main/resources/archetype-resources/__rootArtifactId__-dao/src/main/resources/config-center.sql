@@ -5,7 +5,7 @@ INSERT INTO configuration (proj_code, environment, name, value, description)
 VALUES
   ('${rootArtifactId}', 'local', 'app.name', '内容管理系统', '项目名称'),
   ('${rootArtifactId}', 'local', 'app.author', '康永敢', '项目负责人'),
-  ('${rootArtifactId}', 'local', 'app.record', '皖ICP备16017743号-1', '备案号'),
+  ('${rootArtifactId}', 'local', 'app.ba.no', '皖ICP备16017743号-1', '备案号'),
 
   ('${rootArtifactId}', 'local', 'cache.open', 'Y', '是否开启缓存:{Y:开启,N:不开启}'),
 
@@ -16,13 +16,6 @@ VALUES
   ('${rootArtifactId}', 'local', 'dubbo.timeout', '10000', 'dubbo超时时间'),
 
   ('${rootArtifactId}', 'local', 'file.root.path', '/Users/kyg/code2/${rootArtifactId}/${rootArtifactId}-web/src/main/webapp/WEB-INF/', '文件上传根路径'),
-
-  ('${rootArtifactId}', 'local', 'ftp.ip', '121.40.66.176', 'ftp服务器ip'),
-  ('${rootArtifactId}', 'local', 'ftp.password', '******', 'ftp服务器密码'),
-  ('${rootArtifactId}', 'local', 'ftp.path', 'path/', '上传路径'),
-  ('${rootArtifactId}', 'local', 'ftp.port', '21', 'ftp服务器端口'),
-  ('${rootArtifactId}', 'local', 'ftp.url', 'http://cdn.kangyonggan.com/', '文件服务器地址'),
-  ('${rootArtifactId}', 'local', 'ftp.username', 'kyg', 'ftp服务器用户名'),
 
   ('${rootArtifactId}', 'local', 'jdbc.driver', 'com.mysql.jdbc.Driver', 'jdbc驱动'),
   ('${rootArtifactId}', 'local', 'jdbc.password', '********', 'jdbc密码'),

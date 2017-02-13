@@ -1,6 +1,4 @@
 <#assign ctx="${(rca.contextPath)!''}">
-<@apps>
-
 <div class="space-10"></div>
 
 <form id="form" method="post" action="${ctx}/dashboard/user/profile" class="form-horizontal"
@@ -33,7 +31,7 @@
                             <span class="ace-file-container hide-placeholder selected">
                                 <span class="ace-file-name large">
                                     <img class="middle"
-                                         src="<#if userProfile.largeAvatar?has_content>${ftpUrl}/${userProfile.largeAvatar}<#else>${ctx}/static/ace/dist/avatars/profile-pic.jpg</#if>">
+                                         src="<#if userProfile.largeAvatar?has_content>${ctx}/${userProfile.largeAvatar}<#else>${ctx}/static/ace/dist/avatars/profile-pic.jpg</#if>">
                                     <i class=" ace-icon fa fa-picture-o file-image"></i>
                                 </span>
                             </span>
@@ -218,8 +216,4 @@
     </div>
 </form>
 
-<script>
-    var ftpUrl = '${ftpUrl}';
-</script>
 <script src="${ctx}/static/app/js/dashboard/user/profile.js"></script>
-</@apps>
